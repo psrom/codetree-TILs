@@ -1,8 +1,8 @@
 lst = []
 for _ in range(int(input())):
-    lst.append(int(input()))
+    n = int(input())
+    if n % 2 == 1 and n % 3 == 0:
+        lst.append(n)
 
-lst.sort()
 for i in lst:
-    if i % 2 == 1 and i % 3 == 0:
-        print(i)
+    print(i)
