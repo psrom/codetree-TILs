@@ -6,4 +6,6 @@ for i in range(n, 0, -1):
     for j in range(0, i):
         print(chr(c), end=" ")
         c += 1
+        if c > 90:
+            c = 65
     print()
