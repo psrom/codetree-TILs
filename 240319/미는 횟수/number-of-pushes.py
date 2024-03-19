@@ -1,13 +1,13 @@
 A = input()
 B = input()
 
-check = False
-for i in range(len(A)):
-    A = A[1:] + A[0]
-    if A == B:
-        check = True
-        print(i + 1)
-        break
+def check(A, B):
+    n = len(A)
+    for i in range(1, n + 1):
+        temp = A[-i:] + A[:-i]
+        if temp == B:
+            return i
+    return -1
 
-if not check:
-    print(-1)
+result = check(A, B)
+print(result)
