@@ -12,8 +12,8 @@ dx = [1, -1, 0, 0]
 dy = [0, 0, 1, -1]
 
 result = 0
-for x in range(1, MAX_VAL):
-    for y in range(1, MAX_VAL):
+for x in range(MAX_VAL):
+    for y in range(MAX_VAL):
         if graph[x][y] == 1:
             cnt = 0
 
