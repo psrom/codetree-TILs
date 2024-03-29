@@ -6,7 +6,8 @@ answer = n
 customers = [i - leader for i in customers]
 
 if sum(customers) > 0:
+    cnt_0 = customers.count(0)
     customers = [i // fellow for i in customers]
-    answer += sum(customers) + n
+    answer += sum(customers) + n - cnt_0
 
 print(answer)
