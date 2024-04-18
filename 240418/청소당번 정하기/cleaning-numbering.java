@@ -5,7 +5,7 @@ public class Main {
         int n = sc.nextInt();
         int classroom = 0, passage = 0, toilet = 0;
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             if (i % 12 == 0) {
                 toilet += 1;
             } else if (i % 3 == 0) {
