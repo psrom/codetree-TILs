@@ -9,7 +9,7 @@ public class Main {
                 continue;
             }
 
-            if (i % 100 == 5) {
+            if (i % 100 == 5 || i % 10 == 5) {
                 continue;
             }
 
