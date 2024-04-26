@@ -6,13 +6,13 @@ public class Main {
         int tmp = 1;
 
         for (int i = 0; i < n; i++) {
-            if (tmp == 10) {
-                tmp = 1;
-            }
             for (int j = 0; j < i; j++) {
                 System.out.print("  ");
             }
             for (int j = n - i; j > 0; j--) {
+                if (tmp == 10) {
+                tmp = 1;
+                }
                 System.out.print(tmp + " ");
                 tmp++;
             }
