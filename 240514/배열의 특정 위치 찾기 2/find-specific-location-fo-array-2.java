@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[10];
+        int a = 0, b = 0;
+
+        for (int i = 0; i < 10; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                b += arr[i];
+            } else {
+                a += arr[i];
+            }
+        }
+
+        int ans = (a > b) ? a - b: b- a;
+        System.out.println(ans);
+    }
+}
