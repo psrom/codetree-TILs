@@ -29,7 +29,8 @@ public class Main {
                         break;
                     }
                 }
-            } if (check == true) break;
+                if (check == true) break;
+            } 
         }
 
         if (check == true) {
