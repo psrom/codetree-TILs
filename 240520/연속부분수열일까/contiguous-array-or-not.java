@@ -18,8 +18,8 @@ public class Main {
         boolean check = false;
         for (int i = 0; i < n1; i++) {
             if (arr1[i] == arr2[0]) {
-                for (int j = 1; j < n2; j++) {
-                    if (arr1[i + 1] == arr2[j]) {
+                for (int j = 0; j < n2; j++) {
+                    if (arr1[i] == arr2[j]) {
                         i++;
                         check = true;
                         continue;
