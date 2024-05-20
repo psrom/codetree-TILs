@@ -20,8 +20,8 @@ public class Main {
             if (arr1[i] == arr2[0]) {
                 for (int j = 0; j < n2; j++) {
                     if (arr1[i] == arr2[j]) {
-                        i++;
                         check = true;
+                        i++;
                         continue;
                     }
                     else {
@@ -34,7 +34,7 @@ public class Main {
 
         if (check == true) {
             System.out.print("Yes");
-        } else {
+        } else if (check == false) {
             System.out.print("No");
         }
     }
